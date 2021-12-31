@@ -1,1 +1,28 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav img {
+  width: 35px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container form {
+  width: 325px;
+  display: flex;
+  flex-direction: column;
+}
+/*# sourceMappingURL=style.css.map */
