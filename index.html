@@ -8,18 +8,17 @@
     <title>Squid</title>
     <link rel="shortcut icon" href="./not_squid.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="https://cdn.filesizejs.com/filesize.min.js"></script>
 </head>
 
 <body>
     <nav>
         <img src="./not_squid.png" alt="">
-        <ul>
-            <li>
-                <a href="">AllDebrid</a>
-            </li>
-        </ul>
+        <h1>AllDebrid Wrapper</h1>
     </nav>
     <div class="container">
         <form>
@@ -30,10 +29,22 @@
             <label for="">Link</label>
             <input type="text" id="downloadLink" name="squid-downloadLink" required>
             <button id="submitBtn" type="button">
-                <span>Go</span>
+                <span>Execute</span>
+                <i class="far fa-hand-point-right"></i>
             </button>
         </form>
+        <hr>
+        <div class="results">
+            <p class="label">filename</p>
+            <p id="filename"></p>
+            <p class="label">host</p>
+            <p id="host"></p>
+            <p class="label">filesize</p>
+            <p id="filesize"></p>
+            <button>Download</button>
+        </div>
     </div>
+
 </body>
 <script src="./script.js"></script>
 
