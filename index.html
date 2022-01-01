@@ -8,6 +8,8 @@
     <title>Squid</title>
     <link rel="shortcut icon" href="./not_squid.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
 </head>
 
 <body>
@@ -22,16 +24,17 @@
     <div class="container">
         <form>
             <label for="">Name</label>
-            <input type="text" id="apiName">
+            <input type="text" id="apiName" name="squid-apiName" required>
             <label for="">Key</label>
-            <input type="text" id="apiKey">
+            <input type="text" id="apiKey" name="squid-apiKey" required>
             <label for="">Link</label>
-            <input type="text" id="downloadLink">
-            <button id="submitForm" type="button">
+            <input type="text" id="downloadLink" name="squid-downloadLink" required>
+            <button id="submitBtn" type="button">
                 <span>Go</span>
             </button>
         </form>
     </div>
 </body>
+<script src="./script.js"></script>
 
 </html>
